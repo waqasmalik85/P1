@@ -19,11 +19,11 @@ The goals / steps of this project are the following:
 
 ---
 
-### Reflection
+Reflection
 
 ###1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
 
-My pipeline consisted of following steps:-
+My pipeline consisted of following steps:
 1. Gray scalled the images
 2. Applied Gaussian blur
 3. Used Canny edge detection algorithm to identify the edges
@@ -31,7 +31,7 @@ My pipeline consisted of following steps:-
 5. Applied Hough transform to identify lines
 
 
-In order to draw a single line on the left and right lanes, I modified the draw_lines() function in following ways:-
+In order to draw a single line on the left and right lanes, I modified the draw_lines() function in following ways:
 1. A slope threshold was set to discard lines other than the ones from the lane markings
 2. Length of each line was estimated to give higher weightage to the points belonging to a longer line
 3. Weighted linear regression was applied to the points to estimate the slope and intercept of the resulting left and right line
